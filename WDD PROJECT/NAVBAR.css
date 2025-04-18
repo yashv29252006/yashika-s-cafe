@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    color: ;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 15px 30px;
+    color: rgb(151, 13, 13);
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  
+  .nav-bar {
+    word-spacing: 25px;
+    justify-content:space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    color: transparent;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-style: italic;
+    font-style: oblique;
+    color: transparent;
+    font-weight: bolder;
+    
+  }
+  .logo img {
+    height: 120px;
+    margin-right: 100px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .center-title {
+    flex-grow: 1;
+    text-align: center;
+    font-stretch: extra-expanded;
+    font-size: 60px;
+    font-weight: inherit;
+    font-style: italic;
+    background: url(cafe\ vedio.th.mp4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+      background-image: url('roasted-coffee-beans-top-view-brown-coffee-beans-texture-for-backdrop-and-wallpaper-free-photo.jpg'); /* image ka path yahaan de */
+      background-size: cover;
+      background-position: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 75px;
+      font-weight: bold;
+    }
+    
+  
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(150, 150, 167);
+  }
+  
+  .hero {
+    text-align: center;
+    font-style: italic;
+    font-stretch: expanded;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    padding: 100px 20px;
+    background: url('the-cup-of-latte-coffee-with-heart-shaped-latte-art-and-ai-generated-free-photo.jpg') no-repeat center center/cover;
+    color: peachpuff;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #f4c06c;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+  }
+
+  
+  .btn:hover {
+    background-color:rgb(150, 117, 74);
+  }
+  
+  
+
+  .hero-section {
+    position: relative;
+    height: 180vh;
+    width: 90%;
+    overflow: hidden;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 30%;
+    transform: translateY(-30%);
+    font-family: 'Georgia', serif;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .hero-content button {
+    padding: 10px 20px;
+    background-color: #ffcc66;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; /* Important for full coverage */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+  }
+  
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 2s ease-in forwards;
+          font-size: 2.5rem;
+          color: white;
+        }
+      
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+          .header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        
+          .logo img {
+            height: 80px;
+            margin: 0 auto;
+          }
+        
+          .center-title {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            background-size: contain;
+          }
+        
+          .nav-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px 0;
+            word-spacing: normal;
+          }
+        
+          .nav-bar a {
+            font-size: 1.2rem;
+          }
+        
+          .hero-content h1 {
+            font-size: 1.8rem;
+          }
+        
+          .hero-content p {
+            font-size: 1.1rem;
+          }
+        
+          .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+          }
+        
+          .video-container {
+            height: auto;
+          }
+        
+          .bg-video {
+            min-height: 100%;
+            width: auto;
+          }
+        }

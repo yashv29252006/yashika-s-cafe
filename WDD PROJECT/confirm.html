@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Confirmation</title>
+  <style>
+    body{
+    background-image: url(hearts.th);
+background-size: cover;
+color:black;
+font-family: Georgia, 'Times New Roman', Times, serif ;
+font-size: 70px;
+    }
+    .h2{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      justify-content: center;
+      text-align: center;
+      color: black;
+      font-size: 75px;
+      
+      font-weight: bolder;
+    }
+    @media screen and (max-width: 600px) {
+    body {
+      font-size: 40px;
+      padding: 20px;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .h2 {
+      font-size: 45px;
+    }
+  
+    #msg {
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 28px;
+    }
+  
+    .h2 {
+      font-size: 35px;
+    }
+  
+    #msg {
+      font-size: 24px;
+      padding: 10px;
+    }
+  }
+    
+    
+  </style>
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const item = params.get('item');
+      const quantity = params.get('quantity');
+
+      document.getElementById('msg').innerHTML =
+      Thank you <b>${name}</b>! Your order for <b>${quantity}</b> cup(s) of <b>${item}</b> has been placed successfully.;
+    };
+  </script>
+</head>
+<body>
+  <h2>Order Confirmed! &#128077</h2>
+  <h2>&#10024 Thank you !!! For Visiting Our Cafe &#10024</h2>
+
+  <p id="msg"></p>
+  
+</body>
+</html>
